@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to ForumUsersController.create or ForumUsersController.update,
+     depending on whether we are creating or editing an entity -->
+<form action="/users" method="POST">
+    <input id="id" type="hidden" name="id" th:value="(${forumUser} != null ? ${forumUser.getId()} : '')">
+    <div>
+        <label for="f1">Name</label>
+        <input name="name"
+                type="text"
+               id="f1"
+               th:value="${forumUser?.getName()}"
+               required>
+    </div>
+    <div>
+        <label for="f2">Email</label>
+        <input name="email"
+                type="email"
+               id="f2"
+               th:value="(${forumUser} != null ? ${forumUser.getEmail()} : '')"
+               required>
+    </div>
+    <div>
+        <label for="f3">Password</label>
+        <!-- Do not set the value here -->
+        <input name="password"
+                type="password"
+               id="f3"
+               th:value="(${forumUser} != null ? ${forumUser.getPassword()} : '')"
+               required>
+    </div>
+    <div>
+        <label for="f6">Birthday</label>
+        <input name="birthday"
+                type="date"
+               id="f6"
+               th:value="(${forumUser} != null ? ${forumUser.getBirthday()} : '')"
+               required>
+    </div>
+    <div>
+        <label>Type</label><br/>
+        <select id="f4" name="type" >
+            <!-- For each type you should have one <option> like below  -->
+            <option th:each="type : ${Types}" th:text="${type.toString()}" th:value="${type}"
+                    th:selected="${forumUser!=null ? forumUser.getType().equals(type):false}"> [type_name]</option>
+        </select>
+    </div>
+    <div>
+        <label>Interests</label><br/>
+        <select id="f5" multiple name="interestId">
+            <!-- For each interest you should have one <option> like below  -->
+            <option value="[interest.id]" th:each="interest : ${interests}" th:text="${interest.name}" th:value="${interest.id}"
+                    th:selected="${forumUser!=null ? forumUser.getInterests().contains(interest):false}"> [interest.name]</option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/users" type="button" class="btn btn-primary">Back to users</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

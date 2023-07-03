@@ -1,5 +1,5 @@
 
-##How to start the app
+## How to start the app
 
  - k3d cluster create mycluster -p "8080:80@loadbalancer"
  -  kubectl apply -f namespace.yaml 

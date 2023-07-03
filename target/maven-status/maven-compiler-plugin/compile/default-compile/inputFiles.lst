@@ -1,0 +1,15 @@
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/Kol2022Group3Application.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/InterestService.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/SecurityConfig.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/DataInitializer.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidForumUserIdException.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/web/ForumUsersController.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/Interest.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/ForumUserServiceImpl.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/ForumUserService.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidInterestIdException.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/InterestServiceImpl.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/ForumUserRepository.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/InterestRepository.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUserType.java
+/Users/mariopetkoski/Desktop/java-app/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUser.java
