@@ -24,7 +24,7 @@ metadata:
   name: spring-app
   namespace: javapg
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: spring-app

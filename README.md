@@ -11,6 +11,7 @@
  - kubectl config set-context --current --namespace=javapg
 
  - http://localhost:8080/ in your browser
+ - 
 
  
 
