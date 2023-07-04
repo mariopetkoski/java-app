@@ -6,7 +6,7 @@
 
  - kubectl apply -f postgres.yaml 
 
- - kubectl apply -f ingress.yaml 
+ - kubectl apply -f spring.yaml 
 
  - kubectl config set-context --current --namespace=javapg
 
